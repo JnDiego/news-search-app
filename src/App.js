@@ -10,7 +10,7 @@ function App() {
 
   useEffect(() => {
     const fetchAPI = async () => {
-      const API_KEY = 'f1b108d9b83b479aa296a2cfd5bb8a54';
+      const API_KEY = '';
       const URL = `https://newsapi.org/v2/top-headlines?country=co&category=${category}&apiKey=${API_KEY}`;
 
       const response = await fetch(URL);
