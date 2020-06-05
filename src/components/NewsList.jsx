@@ -3,6 +3,7 @@ import News from './News';
 import PropTypes from 'prop-types';
 
 const NewsList = ({ news }) => {
+  if (news === undefined) return null;
   return (
     <div className="row">
       {news.map((actualNews) => (

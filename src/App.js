@@ -26,7 +26,7 @@ function App() {
       <Header title="News Search" />
       <div className="container white">
         <Form setCategory={setCategory} />
-        <NewsList news={news} />
+        {news !== undefined ? <NewsList news={news} /> : null}
       </div>
     </Fragment>
   );
